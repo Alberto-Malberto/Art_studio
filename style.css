@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.menu {
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 85px;
+  position: fixed;
+  padding: 15px;
+  z-index: 1;
+}
+
+.item_img:hover {
+  animation: shake 1s infinite;
+}
+@keyframes shake {
+  0% {
+    transform: rotate(0);
+  }
+  35% {
+    transform: rotate(15deg);
+  }
+  70% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.social-menu {
+  height: 200px;
+  width: 55px;
+  background-color: #222222;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.menu a {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.color {
+  height: 50%;
+  width: 50%;
+}
+
+.blue {
+  background-color: #23536d;
+}
+
+.pink {
+  background-color: #ff6969;
+}
+
+.yellow {
+  background-color: #ffe49d;
+}
+
+.light-blue {
+  background-color: #67c5e2;
+  border-bottom-right-radius: 150px;
+}
+
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  flex-direction: column;
+}
+
+.header-left {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  padding-left: 85px;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.buttons {
+  height: 25px;
+  border-radius: 30px;
+  border: none;
+  width: 49%;
+  font-weight: 700;
+}
+
+.button1 {
+  flex-grow: 1;
+}
+
+.button2 {
+  flex-grow: 1;
+}
+
+.button3 {
+  flex-grow: 1;
+}
+
+.art {
+  font-weight: 400;
+}
+
+.r-title {
+  font-size: 120px;
+  text-align: right;
+}
+
+.header-buttons {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.about {
+  padding-left: 85px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.about-bg {
+  background-color: #fe6969;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  padding-left: 85px;
+}
+
+.about-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding-left: 85px;
+  color: white;
+  display: flex;
+}
+
+.bg-text {
+  font-size: 110px;
+  opacity: 0.2;
+}
+
+.about-title {
+  font-size: 36px;
+}
+
+.about-left {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  width: 75%;
+}
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 25%;
+  justify-content: space-around;
+  padding-bottom: 15px;
+}
+
+.rect {
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 7px 5px black;
+}
+
+.rect-blue {
+  width: 220px;
+  height: 220px;
+  background-color: #547bc7;
+  align-self: flex-end;
+}
+
+.rect-turquoise {
+  width: 160px;
+  height: 160px;
+  background-color: #3993ba;
+  align-self: center;
+}
+
+.rect-pink {
+  width: 250px;
+  height: 150px;
+  background-color: #e36fc3;
+}
+
+.feature {
+  height: 100vh;
+  padding-left: 85px;
+  background-color: #fee39c;
+  position: relative;
+}
+
+.feature-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding-left: 85px;
+}
+
+.feature-content {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  align-content: space-between;
+  padding-left: 85px;
+}
+
+.feature-content h2 {
+  width: 60%;
+  font-size: 35px;
+}
+
+.feature-content p {
+  width: 40%;
+  font-size: 40px;
+}
+
+.feature-content img {
+  width: 100%;
+}
+
+.photographer {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.photographer-left {
+  background-image: url("img/pictures/4th-section-img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex-grow: 2;
+  margin-left: 85px;
+}
+
+.photographer-right {
+  flex-grow: 3;
+  position: relative;
+  background-image: url("img/pictures/4th-section-bg.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #23536d;
+  background-position: center;
+}
+
+.photographer-content,
+.photographer-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.photographer-content h2 {
+  justify-content: flex-end;
+  color: white;
+  display: flex;
+  font-size: 40px;
+}
+
+.photographer-content p {
+  color: white;
+  justify-content: flex-end;
+  display: flex;
+  font-size: 20px;
+}
+
+.photographer-content {
+  width: 100%;
+}
+
+.photographer-bg h2 {
+  margin-left: 85px;
+}
+
+.portfolio {
+  width: 100%;
+}
+
+.portfolio-content {
+  background-color: #fe6969;
+  width: 100%;
+}
+
+.portfolio-text {
+  padding: 70px 0;
+  text-align: right;
+  color: white;
+}
+
+.portfolio-images {
+  margin-left: 85px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.images {
+  width: 50%;
+  flex-grow: 1;
+  opacity: 0.5;
+  transition: 1s;
+}
+
+.images:hover {
+  opacity: 1;
+}
+
+.image6 {
+  order: -7;
+}
+
+.image7 {
+  order: -6;
+}
+
+.image5 {
+  order: -5;
+}
+
+.image3 {
+  order: -4;
+}
+
+.image4 {
+  order: -3;
+}
+
+.image2 {
+  order: -2;
+}
+
+.image1 {
+  order: -1;
+}
+
+@media (max-width: 391px) {
+  .menu {
+    flex-direction: row;
+    width: 100%;
+    height: 85px;
+    justify-content: space-around;
+  }
+  .bg-text {
+    font-size: 30px;
+  }
+  .header {
+    padding-left: 0;
+    flex-direction: column;
+    padding-top: 85px;
+  }
+  .item_img:hover {
+    animation: none;
+  }
+  .header-left,
+  .header-right {
+    width: 100%;
+    height: 50%;
+  }
+  .r-title {
+    font-size: 80px;
+  }
+  .about-bg,
+  .about-content {
+    padding-left: 0;
+  }
+  .about-content {
+    flex-direction: column;
+  }
+  .about-right {
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+  }
+  .about-left {
+    width: 100%;
+    height: fit-content;
+  }
+  .feature {
+    flex-direction: column;
+  }
+}
+/* Стилизовать прямоугольники, задать размеры, цвет фона для каждого, закругление и тень */
+
+/* Стилизовать меню на новом сайте: поставить элементы в столбик, задать им отступы, сделать меню фиксированным (+ задать высоту и ширину для меню) */
