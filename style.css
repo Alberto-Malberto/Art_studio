@@ -411,8 +411,33 @@
     width: 100%;
     height: fit-content;
   }
-  .feature {
+  .feature-content {
     flex-direction: column;
+    padding-left: 0;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+
+  .feature-content h2,
+  .feature-content p {
+    width: 100%;
+  }
+  .photographer {
+    flex-direction: column;
+  }
+
+  .photographer-left {
+    margin-left: 0;
+    height: 50%;
+  }
+  .photographer-right {
+    height: 50%;
+  }
+  .photographer-bg h2 {
+    margin-left: 0;
+  }
+  .portfolio-images {
+    margin-left: 0;
   }
 }
 /* Стилизовать прямоугольники, задать размеры, цвет фона для каждого, закругление и тень */
