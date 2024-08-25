@@ -369,7 +369,7 @@
   order: -1;
 }
 
-@media (max-width: 391px) {
+@media (max-width: 420px) {
   .menu {
     flex-direction: row;
     width: 100%;
