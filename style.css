@@ -369,6 +369,83 @@
   order: -1;
 }
 
+.contact {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.middle-contact {
+  background-color: #23536d;
+  color: white;
+  flex: 3 1 auto;
+}
+
+.left-contact {
+  background:url("img/pictures/form-left.png") center/cover no-repeat;
+  flex: 1 5 300px;
+}
+
+.right-contact {
+  background:url("img/pictures/form-right.png") center/cover no-repeat;
+  flex: 1 5 300px;
+}
+
+.middle-contact form {
+  flex-direction: column;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.middle-contact h2 {
+  font-size: 35px;
+  text-align: right;
+}
+
+.middle-contact label {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.middle-contact input {
+  padding: 7px;
+}
+
+.middle-contact select {
+  padding: 7px;
+}
+
+.middle-contact input[type=checkbox] {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 15px;
+}
+
+.contact-button {
+  background-color: black;
+  color: white;
+  font-weight:700;
+  width: fit-content;
+  padding: 20px 40px;
+  margin: auto;
+  border-radius: 0 15px;
+  border: none;
+  transition: 0.5s;
+}
+
+
+.contact-button:hover {
+  background-color: #343434;
+  transform: scale(1.1);
+}
+
+.contact-button:active {
+  background-color: rgb(120, 2, 120);
+  transform: scale(1.1);
+}
+
 @media (max-width: 420px) {
   .menu {
     flex-direction: row;
